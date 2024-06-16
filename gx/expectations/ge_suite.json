@@ -1,0 +1,140 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "ge_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 38809,
+        "min_value": 38809
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {},
+            "metric_name": "table.row_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "productsubcategory",
+          "Sales",
+          "OrderCount",
+          "Country_y",
+          "City_y",
+          "SaleswithStandard",
+          "Discount",
+          11,
+          "product",
+          "NetSales",
+          "StateCD",
+          "Customer",
+          "OrderQuantity",
+          "productcategory",
+          "UnitPriceDiscount",
+          "Country_x",
+          "UnitPrice",
+          "State",
+          "StandardCost",
+          "City_x",
+          "latitude",
+          "State.1",
+          "ListPrice",
+          "zip",
+          "Territory",
+          "longitude",
+          "OrderDate",
+          "saleterritory",
+          "CityCd",
+          "Employee"
+        ],
+        "exact_match": null
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_equal",
+      "kwargs": {
+        "value": 38809
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "ProductKey"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Sales"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "productcategory"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "saleterritory"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "OrderQuantity",
+        "type_list": [
+          "int",
+          "int64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "OrderQuantity",
+        "max_value": 50,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "StandardCost",
+        "max_value": 500,
+        "min_value": 100
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2024-06-16T23:04:32.079559Z",
+        "comment": "Created by effective Rule-Based Profiler of OnboardingDataAssistant with the configuration included.\n"
+      }
+    ],
+    "great_expectations_version": "0.18.15"
+  }
+}
